@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /api
+
+---
+
+spring:
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/bd_prueba_kotlin
+    username: postgres
+    password: mauricio29
+
+  jpa:
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
